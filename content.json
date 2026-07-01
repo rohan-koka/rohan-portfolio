@@ -1,0 +1,140 @@
+{
+  "hero": {
+    "name": "Rohan Koka",
+    "tagline": "Cybersecurity · CS · Pitt '29",
+    "subtitle": "Building things. Breaking things. Learning the whole time.",
+    "cta1": "View Projects",
+    "cta2": "Scouting Report",
+    "stats": {
+      "overall": 83,
+      "coding": 78,
+      "security": 82,
+      "basketballIQ": 92,
+      "grind": 99
+    }
+  },
+  "about": {
+    "bio": "A rising college student at the University of Pittsburgh, studying Cybersecurity Analytics & Operations. I grew up on basketball courts and computer labs — equally comfortable running a playbook and running a terminal. I love the puzzle of security, the creativity of building, and the discipline of showing up every day.",
+    "lookingFor": "Currently looking for SWE and security internships where I can contribute, learn, and prove myself.",
+    "strengths": "Curious, competitive, adapts fast. Known for tinkering until things break, then fixing them.",
+    "weaknesses": "None detected.",
+    "facts": {
+      "school": "University of Pittsburgh",
+      "major": "Cybersecurity Analytics & Operations",
+      "class": "2029",
+      "home": "Oakdale, PA"
+    },
+    "chips": ["#tinkerer", "#hooper", "#night-owl", "#builder", "#curious"]
+  },
+  "skills": [
+    { "name": "Python", "rating": 82, "category": "offense", "note": "Primary weapon. Comfortable across CLI and web." },
+    { "name": "JavaScript", "rating": 65, "category": "offense", "note": "Growing fluency. Building frontends and interactivity." },
+    { "name": "HTML/CSS", "rating": 70, "category": "offense", "note": "Solid fundamentals. Responsive design, modern layouts." },
+    { "name": "Cybersecurity", "rating": 88, "category": "defense", "note": "Deep curiosity. Knows enough to be dangerous." },
+    { "name": "Cryptography", "rating": 72, "category": "defense", "note": "Applied it in real projects. Caesar Cipher was just the start." },
+    { "name": "Networking", "rating": 75, "category": "defense", "note": "TCP/IP, protocols, the backbone of security." },
+    { "name": "Git & GitHub", "rating": 70, "category": "athleticism", "note": "Version control is second nature. All repos public." },
+    { "name": "Streamlit", "rating": 68, "category": "athleticism", "note": "Go-to for quick data apps and prototypes." },
+    { "name": "VS Code", "rating": 80, "category": "athleticism", "note": "Daily driver. Extensions make it a full IDE." },
+    { "name": "Terminal", "rating": 72, "category": "athleticism", "note": "CLI over GUI when it counts." }
+  ],
+  "projects": [
+    {
+      "name": "NBA 2K Rating Guessing Game",
+      "repo": "nba2k-streamlit",
+      "url": "https://github.com/rohan-koka/nba2k-streamlit",
+      "live": "https://nba2k-app-j83uzadxe7fme3nybz4aar.streamlit.app",
+      "description": "Guess NBA 2K overall ratings of current players. Score points based on accuracy — exact match gets 10. 10 rounds, max score 100.",
+      "tags": ["Python", "Streamlit", "Sports"],
+      "lang": "Python",
+      "stars": 1,
+      "year": 2026,
+      "fun": 9,
+      "difficulty": 4
+    },
+    {
+      "name": "NBA 2025 Draft Quiz",
+      "repo": "nba-draft-quiz",
+      "url": "https://github.com/rohan-koka/nba-draft-quiz",
+      "live": "https://nba-draft-quiz-b5cfonwztujdncywsnngmf.streamlit.app/",
+      "description": "Guess what pick each player was selected in the 2025 NBA Draft. Real draft data, real bragging rights.",
+      "tags": ["Python", "Streamlit", "Sports"],
+      "lang": "Python",
+      "stars": 0,
+      "year": 2026,
+      "fun": 8,
+      "difficulty": 5
+    },
+    {
+      "name": "Password Strength Checker",
+      "repo": "password-checker",
+      "url": "https://github.com/rohan-koka/password-checker",
+      "live": null,
+      "description": "Web app that scores passwords across 6 security criteria. Visual progress bars, real-time feedback, and a very clear \"your password is weak\" button.",
+      "tags": ["Python", "Streamlit", "Security"],
+      "lang": "Python",
+      "stars": 0,
+      "year": 2026,
+      "fun": 6,
+      "difficulty": 4
+    },
+    {
+      "name": "Caesar Cipher Encoder/Decoder",
+      "repo": "caesar-cipher",
+      "url": "https://github.com/rohan-koka/caesar-cipher",
+      "live": null,
+      "description": "Interactive cryptography tool with a retro terminal feel. Shift letters 1–25, toggle encode/decode, watch the transformation happen in real-time.",
+      "tags": ["Python", "Streamlit", "Cryptography"],
+      "lang": "Python",
+      "stars": 0,
+      "year": 2026,
+      "fun": 7,
+      "difficulty": 3
+    }
+  ],
+  "experience": [
+    {
+      "season": "2024–2025",
+      "team": "Sonic Drive-In",
+      "role": "Carhop",
+      "location": "Oakdale, PA",
+      "hours": "~20 hrs/wk",
+      "stats": [
+        "Delivered food orders and provided customer service in a high-volume, fast-paced environment",
+        "Interacted with 200+ customers per shift, strengthening verbal communication and time management",
+        "Maintained accuracy and efficiency under pressure while managing multiple orders simultaneously"
+      ]
+    },
+    {
+      "season": "Grades 9–11",
+      "team": "STEM-E Online Internship",
+      "role": "Programming Intern → Student Leader",
+      "location": "Remote",
+      "hours": "~5 hrs/wk",
+      "badge": "Leadership",
+      "stats": [
+        "Joined a competitive 500+ member STEM internship focused on introductory programming and game development",
+        "Contributed to collaborative coding projects and earned a leadership role, mentoring beginner participants",
+        "Received a formal letter of recommendation from internship coordinator for performance and initiative"
+      ]
+    }
+  ],
+  "education": {
+    "school": "University of Pittsburgh",
+    "degree": "B.S., Cybersecurity Analytics and Operations",
+    "department": "Information Sciences & Technology",
+    "years": "Expected May 2029",
+    "location": "Pittsburgh, PA",
+    "coursework": ["Networking Fundamentals", "Cybersecurity Principles", "Programming Concepts", "Data Analytics"],
+    "activities": [
+      { "name": "Engineering Club", "period": "Fall 2025", "note": "Penn State Beaver — technical problem-solving and collaborative projects" },
+      { "name": "Student Government", "period": "Fall 2025", "note": "Penn State Beaver — student representation and campus involvement" },
+      { "name": "Varsity Track & Field / Basketball / Esports", "period": "Grades 9–12", "note": "South Fayette High School — teamwork, discipline, strategic thinking" }
+    ]
+  },
+  "contact": {
+    "email": "rohandkoka2020@gmail.com",
+    "github": "https://github.com/rohan-koka",
+    "linkedin": "https://www.linkedin.com/in/rohan-koka-b689b7413/"
+  }
+}

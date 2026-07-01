@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rohan Koka — Cybersecurity student, builder, tinkerer. Portfolio of projects, skills, and experience." />
+  <title>Rohan Koka | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── BOOT LOADER ────────────────────────────────────────── -->
+  <div id="bootLoader" class="boot-loader">
+    <div class="boot-screen">
+      <div class="boot-scanlines"></div>
+      <div class="boot-text">
+        <span class="boot-line" data-delay="0">ROHAN KOKA // PLAYER PROFILE</span>
+        <span class="boot-line" data-delay="400">TEAM: UNIVERSITY OF PITT</span>
+        <span class="boot-line" data-delay="800">POSITION: CYBERSECURITY | CS</span>
+        <span class="boot-line" data-delay="1200">CLASS: 2029</span>
+        <span class="boot-line boot-status" data-delay="1600">LOADING... <span class="boot-dots">...</span></span>
+      </div>
+      <button class="boot-skip" id="bootSkip">SKIP ↵</button>
+    </div>
+  </div>
+
+  <!-- ─── NAVIGATION ─────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">RK<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="resume.pdf" download class="btn btn-outline btn-sm">Resume</a>
+      <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="nav-drawer" id="navDrawer">
+      <li><a href="#about" class="drawer-link">About</a></li>
+      <li><a href="#skills" class="drawer-link">Skills</a></li>
+      <li><a href="#projects" class="drawer-link">Projects</a></li>
+      <li><a href="#experience" class="drawer-link">Experience</a></li>
+      <li><a href="#education" class="drawer-link">Education</a></li>
+      <li><a href="#contact" class="drawer-link">Contact</a></li>
+      <li><a href="resume.pdf" download class="btn btn-outline btn-sm" style="margin-top:8px">Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- ─── HERO ───────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+
+    <div class="container hero-content" data-animate>
+      <div class="hero-left">
+        <p class="hero-greeting">Hey, I'm</p>
+        <h1 class="hero-name" id="heroName">Rohan <span class="accent">Koka</span></h1>
+        <p class="hero-tagline">Cybersecurity · CS · Pitt <span class="accent">'29</span></p>
+        <p class="hero-sub">Building things. Breaking things. Learning the whole time.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#about" class="btn btn-ghost">Scouting Report</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-header">
+          <span class="hero-card-label">PLAYER RATING</span>
+          <span class="hero-card-overall" id="overallRating">83</span>
+        </div>
+        <div class="hero-card-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-label">CODING</span>
+            <div class="hero-stat-bar"><div class="hero-stat-fill" data-fill="78"></div></div>
+            <span class="hero-stat-value">78</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-label">SECURITY</span>
+            <div class="hero-stat-bar"><div class="hero-stat-fill" data-fill="82"></div></div>
+            <span class="hero-stat-value">82</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-label">BASKETBALL IQ</span>
+            <div class="hero-stat-bar"><div class="hero-stat-fill" data-fill="92"></div></div>
+            <span class="hero-stat-value">92</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-label">GRIND</span>
+            <div class="hero-stat-bar"><div class="hero-stat-fill" data-fill="99"></div></div>
+            <span class="hero-stat-value">99</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ──────────────────────────────────────────────── -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title" data-animate>Scouting <span class="accent">Report</span></h2>
+      <p class="section-sub" data-animate>Player bio & quick facts</p>
+
+      <div class="about-grid" data-animate>
+        <div class="about-left">
+          <div class="about-avatar-wrap">
+            <div class="about-avatar">
+              <img src="photo.jpg" alt="Rohan Koka" id="aboutPhoto" onerror="this.src='https://api.dicebear.com/9.x/initials/svg?seed=RK&backgroundColor=ff6b35&fontFamily=Syne&fontSize=36&fontWeight=700'" />
+            </div>
+            <div class="about-avatar-ring"></div>
+          </div>
+
+          <div class="about-facts">
+            <div class="fact-row"><span class="fact-key">SCHOOL</span><span class="fact-val">University of Pittsburgh</span></div>
+            <div class="fact-row"><span class="fact-key">MAJOR</span><span class="fact-val">Cybersecurity Analytics & Operations</span></div>
+            <div class="fact-row"><span class="fact-key">CLASS</span><span class="fact-val">2029</span></div>
+            <div class="fact-row"><span class="fact-key">HOME</span><span class="fact-val">Oakdale, PA</span></div>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="scout-card">
+            <div class="scout-header">
+              <span class="scout-label">STRENGTHS</span>
+            </div>
+            <p class="scout-text">Curious, competitive, adapts fast. Known for tinkering until things break, then fixing them.</p>
+          </div>
+
+          <div class="scout-card">
+            <div class="scout-header">
+              <span class="scout-label">WEAKNESSES</span>
+            </div>
+            <p class="scout-text scout-weakness">None detected.</p>
+          </div>
+
+          <p class="about-bio">A rising college student at the University of Pittsburgh, studying Cybersecurity Analytics & Operations. I grew up on basketball courts and computer labs — equally comfortable running a playbook and running a terminal. I love the puzzle of security, the creativity of building, and the discipline of showing up every day.</p>
+          <p class="about-bio about-looking">Currently looking for SWE and security internships where I can contribute, learn, and prove myself.</p>
+
+          <div class="chips">
+            <span class="chip">#tinkerer</span>
+            <span class="chip">#hooper</span>
+            <span class="chip">#night-owl</span>
+            <span class="chip">#builder</span>
+            <span class="chip">#curious</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─────────────────────────────────────────────── -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-animate>Attribute <span class="accent">Bars</span></h2>
+      <p class="section-sub" data-animate>Scouting report on technical skills</p>
+
+      <div class="skills-categories" data-animate>
+
+        <div class="skills-category">
+          <h3 class="skills-cat-title"><span class="cat-icon">⚡</span> Offense <span class="cat-sub">(Languages)</span></h3>
+          <div class="skill-bars">
+            <div class="skill-bar-row">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="82"></div></div>
+              <span class="skill-rating">82</span>
+              <span class="skill-note">Primary weapon. CLI and web.</span>
+            </div>
+            <div class="skill-bar-row">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="65"></div></div>
+              <span class="skill-rating">65</span>
+              <span class="skill-note">Growing fluency. Frontends.</span>
+            </div>
+            <div class="skill-bar-row">
+              <span class="skill-name">HTML/CSS</span>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="70"></div></div>
+              <span class="skill-rating">70</span>
+              <span class="skill-note">Responsive design, modern layouts.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3 class="skills-cat-title"><span class="cat-icon">🛡️</span> Defense <span class="cat-sub">(Security)</span></h3>
+          <div class="skill-bars">
+            <div class="skill-bar-row">
+              <span class="skill-name">Cybersecurity</span>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="88"></div></div>
+              <span class="skill-rating">88</span>
+              <span class="skill-note">Deep curiosity. Dangerous.</span>
+            </div>
+            <div class="skill-bar-row">
+              <span class="skill-name">Cryptography</span>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="72"></div></div>
+              <span class="skill-rating">72</span>
+              <span class="skill-note">Applied in real projects.</span>
+            </div>
+            <div class="skill-bar-row">
+              <span class="skill-name">Networking</span>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="75"></div></div>
+              <span class="skill-rating">75</span>
+              <span class="skill-note">TCP/IP, protocols, backbone.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3 class="skills-cat-title"><span class="cat-icon">🏃</span> Athleticism <span class="cat-sub">(Tools)</span></h3>
+          <div class="skill-bars">
+            <div class="skill-bar-row">
+              <span class="skill-name">Git & GitHub</span>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="70"></div></div>
+              <span class="skill-rating">70</span>
+              <span class="skill-note">Second nature. All repos public.</span>
+            </div>
+            <div class="skill-bar-row">
+              <span class="skill-name">Streamlit</span>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="68"></div></div>
+              <span class="skill-rating">68</span>
+              <span class="skill-note">Quick data apps and prototypes.</span>
+            </div>
+            <div class="skill-bar-row">
+              <span class="skill-name">VS Code</span>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="80"></div></div>
+              <span class="skill-rating">80</span>
+              <span class="skill-note">Daily driver. Full IDE.</span>
+            </div>
+            <div class="skill-bar-row">
+              <span class="skill-name">Terminal</span>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="72"></div></div>
+              <span class="skill-rating">72</span>
+              <span class="skill-note">CLI over GUI when it counts.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ───────────────────────────────────────────── -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title" data-animate>Highlight <span class="accent">Reel</span></h2>
+      <p class="section-sub" data-animate>Game tape — things I've built</p>
+
+      <div class="projects-list" data-animate>
+
+        <article class="project-card">
+          <div class="project-rank">#1</div>
+          <div class="project-body">
+            <div class="project-header">
+              <h3>NBA 2K Rating Guessing Game</h3>
+              <span class="project-stars">⭐ 1</span>
+            </div>
+            <p class="project-desc">Guess NBA 2K overall ratings of current players. Score points based on accuracy — exact match gets 10. 10 rounds, max score 100.</p>
+            <div class="project-meta">
+              <span class="project-lang">Python</span>
+              <span class="project-year">2026</span>
+              <span class="project-fun">FUN: <span class="fun-bar">█████████</span>░ 9/10</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Streamlit</span>
+              <span class="tag">Sports</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/rohan-koka/nba2k-streamlit" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+                <i data-lucide="github"></i> Code
+              </a>
+              <a href="https://nba2k-app-j83uzadxe7fme3nybz4aar.streamlit.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <i data-lucide="play"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-rank">#2</div>
+          <div class="project-body">
+            <div class="project-header">
+              <h3>NBA 2025 Draft Quiz</h3>
+              <span class="project-stars">⭐ 0</span>
+            </div>
+            <p class="project-desc">Guess what pick each player was selected in the 2025 NBA Draft. Real draft data, real bragging rights.</p>
+            <div class="project-meta">
+              <span class="project-lang">Python</span>
+              <span class="project-year">2026</span>
+              <span class="project-fun">FUN: <span class="fun-bar">████████</span>░░ 8/10</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Streamlit</span>
+              <span class="tag">Sports</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/rohan-koka/nba-draft-quiz" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+                <i data-lucide="github"></i> Code
+              </a>
+              <a href="https://nba-draft-quiz-b5cfonwztujdncywsnngmf.streamlit.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <i data-lucide="play"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-rank">#3</div>
+          <div class="project-body">
+            <div class="project-header">
+              <h3>Password Strength Checker</h3>
+              <span class="project-stars">⭐ 0</span>
+            </div>
+            <p class="project-desc">Web app that scores passwords across 6 security criteria. Visual progress bars, real-time feedback, and a very clear "your password is weak" button.</p>
+            <div class="project-meta">
+              <span class="project-lang">Python</span>
+              <span class="project-year">2026</span>
+              <span class="project-fun">FUN: <span class="fun-bar">██████</span>░░░░ 6/10</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Streamlit</span>
+              <span class="tag">Security</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/rohan-koka/password-checker" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+                <i data-lucide="github"></i> Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-rank">#4</div>
+          <div class="project-body">
+            <div class="project-header">
+              <h3>Caesar Cipher Encoder/Decoder</h3>
+              <span class="project-stars">⭐ 0</span>
+            </div>
+            <p class="project-desc">Interactive cryptography tool with a retro terminal feel. Shift letters 1–25, toggle encode/decode, watch the transformation happen in real-time.</p>
+            <div class="project-meta">
+              <span class="project-lang">Python</span>
+              <span class="project-year">2026</span>
+              <span class="project-fun">FUN: <span class="fun-bar">███████</span>░░░ 7/10</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Streamlit</span>
+              <span class="tag">Cryptography</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/rohan-koka/caesar-cipher" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+                <i data-lucide="github"></i> Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ─────────────────────────────────────────── -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-animate>Career <span class="accent">Stats</span></h2>
+      <p class="section-sub" data-animate>Season-by-season breakdown</p>
+
+      <div class="experience-timeline" data-animate>
+
+        <div class="exp-card">
+          <div class="exp-season">2024–2025</div>
+          <div class="exp-details">
+            <div class="exp-header">
+              <h3>Sonic Drive-In</h3>
+              <span class="exp-role">Carhop</span>
+            </div>
+            <div class="exp-meta">
+              <span>Oakdale, PA</span>
+              <span class="exp-hours">~20 hrs/wk</span>
+            </div>
+            <ul class="exp-stats">
+              <li>Delivered food orders and provided customer service in a high-volume, fast-paced environment</li>
+              <li>Interacted with 200+ customers per shift, strengthening verbal communication and time management</li>
+              <li>Maintained accuracy and efficiency under pressure while managing multiple orders simultaneously</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-season">Grades 9–11</div>
+          <div class="exp-details">
+            <div class="exp-header">
+              <h3>STEM-E Online Internship</h3>
+              <span class="exp-role">Programming Intern → Student Leader</span>
+              <span class="exp-badge">Leadership</span>
+            </div>
+            <div class="exp-meta">
+              <span>Remote</span>
+              <span class="exp-hours">~5 hrs/wk</span>
+            </div>
+            <ul class="exp-stats">
+              <li>Joined a competitive 500+ member STEM internship focused on introductory programming and game development</li>
+              <li>Contributed to collaborative coding projects and earned a leadership role, mentoring beginner participants</li>
+              <li>Received a formal letter of recommendation from internship coordinator for performance and initiative</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EDUCATION ──────────────────────────────────────────── -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title" data-animate>Draft <span class="accent">Profile</span></h2>
+      <p class="section-sub" data-animate>Academic career stats</p>
+
+      <div class="edu-main" data-animate>
+        <div class="edu-card">
+          <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+          <div class="edu-details">
+            <h3>University of Pittsburgh</h3>
+            <p class="edu-degree">B.S., Cybersecurity Analytics and Operations <span class="edu-badge">In Progress</span></p>
+            <p class="edu-dept">Information Sciences & Technology</p>
+            <p class="edu-years">Expected May 2029 · Pittsburgh, PA</p>
+          </div>
+        </div>
+
+        <div class="edu-coursework">
+          <h4 class="edu-section-label">Training Camps <span class="cat-sub">(Coursework)</span></h4>
+          <div class="coursework-tags">
+            <span class="tag">Networking Fundamentals</span>
+            <span class="tag">Cybersecurity Principles</span>
+            <span class="tag">Programming Concepts</span>
+            <span class="tag">Data Analytics</span>
+          </div>
+        </div>
+
+        <div class="edu-activities">
+          <h4 class="edu-section-label">Preseason Games <span class="cat-sub">(Activities)</span></h4>
+          <div class="activities-list">
+            <div class="activity-item">
+              <span class="activity-name">Engineering Club</span>
+              <span class="activity-period">Fall 2025</span>
+              <span class="activity-note">Penn State Beaver — technical problem-solving and collaborative projects</span>
+            </div>
+            <div class="activity-item">
+              <span class="activity-name">Student Government</span>
+              <span class="activity-period">Fall 2025</span>
+              <span class="activity-note">Penn State Beaver — student representation and campus involvement</span>
+            </div>
+            <div class="activity-item">
+              <span class="activity-name">Varsity Track & Field / Basketball / Esports</span>
+              <span class="activity-period">Grades 9–12</span>
+              <span class="activity-note">South Fayette High School — teamwork, discipline, strategic thinking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ────────────────────────────────────────────── -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-animate>Free <span class="accent">Agency</span></h2>
+      <p class="section-sub" data-animate>Open to internships, collaborations, or a conversation about tech.</p>
+
+      <div class="contact-terminal" data-animate>
+        <div class="terminal-header">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">contact.sh</span>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-line">
+            <span class="terminal-prompt">$</span>
+            <span class="terminal-cmd">cat</span>
+            <span class="terminal-arg">contact_info.txt</span>
+          </div>
+          <div class="terminal-output">
+            <p>> EMAIL &nbsp;&nbsp;&nbsp;&nbsp;→ <a href="mailto:rohandkoka2020@gmail.com">rohandkoka2020@gmail.com</a></p>
+            <p>> GITHUB &nbsp;&nbsp;&nbsp;→ <a href="https://github.com/rohan-koka" target="_blank" rel="noopener">github.com/rohan-koka</a></p>
+            <p>> LINKEDIN → <a href="https://www.linkedin.com/in/rohan-koka-b689b7413/" target="_blank" rel="noopener">linkedin.com/in/rohan-koka</a></p>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-prompt">$</span>
+            <span class="terminal-cursor">█</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-cta" data-animate>
+        <a href="mailto:rohandkoka2020@gmail.com" class="btn btn-primary btn-lg">
+          <i data-lucide="mail"></i> Sign Me
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-scanline"></div>
+    <div class="container footer-inner">
+      <p>Designed &amp; built by <strong>Rohan Koka</strong></p>
+      <p class="footer-sub">© <span id="year"></span> · All rights reserved</p>
+      <p class="footer-easter">vulnerability found: <span class="accent">0</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
